@@ -1,15 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { SinglefruitComponent } from './singlefruit/singlefruit.component';
 
 @Component({
   selector: 'app-fruitlist',
-  imports: [CommonModule],
+  imports: [CommonModule, SinglefruitComponent],
   templateUrl: './fruitlist.component.html',
   styleUrl: './fruitlist.component.scss',
 })
 export class FruitlistComponent {
-  howItWorks = 'not bad';
-
+  title = 'Fruitlist';
   fruitlist = [
     {
       name: 'Apfel',
@@ -82,4 +82,8 @@ export class FruitlistComponent {
       ],
     },
   ];
+
+  numLog(indexOfFruit: number) {
+    console.log(indexOfFruit);
+  }
 }
