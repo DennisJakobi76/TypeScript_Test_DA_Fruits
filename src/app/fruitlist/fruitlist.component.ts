@@ -83,7 +83,7 @@ export class FruitlistComponent {
     },
   ];
 
-  numLog(indexOfFruit: number) {
-    console.log(indexOfFruit);
+  nameLog(name: string) {
+    console.log(name);
   }
 }
