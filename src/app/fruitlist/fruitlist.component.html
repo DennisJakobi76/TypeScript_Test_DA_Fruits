@@ -1,2 +1,4 @@
 <!DOCTYPE html>
-<p>fruitlist works {{howItWorks}}!</p>
+@for(item of fruitlist; track item.name) {
+<p>{{item.name}}</p>
+}
