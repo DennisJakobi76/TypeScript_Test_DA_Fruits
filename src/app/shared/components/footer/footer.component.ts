@@ -121,9 +121,7 @@ import { Component } from '@angular/core';
   styles: [
     `
       footer {
-        //TODO - remove bottom and set position relative
-        bottom: 0;
-        position: absolute;
+        position: relative;
         height: 128px;
         width: 100%;
         background-color: #06171e;
